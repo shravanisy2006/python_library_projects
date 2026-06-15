@@ -23,21 +23,35 @@ print("\nSales data shape: " ,sales_data.shape)
 
 print("Sales of first three restaurant:\n",sales_data[0:3])
 
-#total sales
-Total_sales = np.sum(sales_data[:,1:], axis=0)
-print("Total sales per year: ", Total_sales)
+#total sales per year
+total_sales = np.sum(sales_data[:,1:], axis=0)
+#axis=0 → perform operation column-wise (years)
+print("Total sales per year: ", total_sales)
+
+#total sales per restaurant
+total = np.sum(sales_data[:,1:],axis=1)
+#axis=1 → perform operation row-wise (restaurants)
+print("Total sales per restaurant: ", total)
 
 #minimum sale
-Min_sales = np.min(sales_data[:,1:], axis=1)
-print("Minimum sales per restaurant: ", Min_sales)
+min_sales = np.min(sales_data[:,1:], axis=1)
+print("Minimum sales per restaurant: ", min_sales)
 
 #maximum sale
-Max_sales = np.max(sales_data[:,1:], axis=0)
-print("Maximum sales per year: ", Max_sales)
+max_sales = np.max(sales_data[:,1:], axis=0)
+print("Maximum sales per year: ", max_sales)
+
+#top restaurant
+top_restaurant = np.argmax(total)
+print("The top restaurant: ",sales_data[top_restaurant, 0])
+
+#growth rate
+growth = np.diff(sales_data[:,1:],axis=1)
+print("Yearly Growth: ",growth)
 
 #average sale
-Average_sales = np.average(sales_data[:,1:], axis=1)
-print("Average sales per restaurat: ", Average_sales)
+average_sales = np.average(sales_data[:,1:], axis=1)
+print("Average sales per restaurat: ", average_sales)
 
 #cumulative sales
 cumsum = np.cumsum(sales_data[:,1:], axis=1)
@@ -45,11 +59,18 @@ print("Cumulative sum: ",cumsum)
 
 #graph for cumulative sales
 years = [2021, 2022, 2023, 2024]
-plt.figure(figsize=(10, 6))
-plt.plot(years ,np.average(cumsum, axis=0), marker ='o')
+
+for i in range(len(sales_data)):
+    plt.plot(
+        years ,
+        sales_data[i,1:], 
+        marker ='o',
+        label = f"Restaurant{int(sales_data[i,0])}"
+        )
 plt.xticks(years)
-plt.title("Average Cumulative sales accross all restaurant")
+plt.title("Restaurant Sales Trend")
 plt.xlabel("Years")
 plt.ylabel("Sales")
 plt.grid(True)
+plt.legend()
 plt.show()
