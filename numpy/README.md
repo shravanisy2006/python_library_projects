@@ -1,148 +1,62 @@
-# 🍽️ Zomato Restaurant Sales Analysis using NumPy & Matplotlib
+# 🐍 Python Libraries Learning Series
 
-Part of my Python Libraries Learning Series, where I build small projects to understand NumPy, Matplotlib, Pandas, and Machine Learning concepts through practical examples.
+A collection of beginner-friendly projects built to strengthen my understanding of **NumPy**, **Matplotlib**, and data analysis concepts through practical applications.
 
-## 📌 Project Overview
+## 📚 Projects
 
-This project demonstrates how **NumPy** and **Matplotlib** can be used to analyze restaurant sales data in a real-world business scenario.
+### 1. 🍽️ Zomato Restaurant Sales Analysis
 
-Using sales records of multiple restaurants from **2021 to 2024**, the program performs data analysis operations and visualizes sales trends.
+Analyzed restaurant sales data (2021–2024) using NumPy and visualized trends with Matplotlib.
 
----
+**Key Features:**
 
-## 📊 Dataset Structure
+* Sales analysis by restaurant and year
+* Top-performing restaurant identification
+* Year-over-year growth analysis
+* Sales trend visualization
 
-The dataset is stored as a NumPy array in the following format:
-
-```
-[restaurant_id, 2021_sales, 2022_sales, 2023_sales, 2024_sales]
-```
-
-Example:
-
-```python
-[
-    [1, 150000, 180000, 220000, 250000],
-    [2, 120000, 140000, 160000, 190000],
-    [3, 200000, 230000, 260000, 300000],
-    [4, 180000, 210000, 240000, 270000],
-    [5, 160000, 185000, 205000, 230000]
-]
-```
+**Concepts Used:**
+`NumPy` • Array Slicing • Aggregations (`sum`, `mean`, `max`) • `argmax()` • `diff()` • `cumsum()` • `Matplotlib`
 
 ---
 
-## 🚀 Features Implemented
+### 2. 🎓 Student Marks Analyzer
 
-### 1. Dataset Information
+Developed a NumPy-based analyzer to evaluate student performance across multiple subjects.
 
-* Display dataset shape using `.shape`
-* Access specific records using array slicing
+**Key Features:**
 
-### 2. Sales Analysis
+* Student-wise and subject-wise average calculation
+* Topper identification
+* Highest scoring subject analysis
+* Performance filtering based on score thresholds
 
-* Total sales per year
-* Total sales per restaurant
-* Minimum sales per restaurant
-* Maximum sales per year
-* Average sales per restaurant
-
-### 3. Performance Analysis
-
-* Identify the top-performing restaurant using `np.argmax()`
-* Calculate yearly sales growth using `np.diff()`
-* Compute cumulative sales using `np.cumsum()`
-
-### 4. Data Visualization
-
-* Plot yearly sales trends for each restaurant
-* Add titles, labels, legends, and grids for better readability
-
----
-
-## 🧠 NumPy Concepts Used
-
-| Concept                               | Function Used      |
-| ------------------------------------- | ------------------ |
-| Creating Arrays                       | `np.array()`       |
-| Array Shape                           | `.shape`           |
-| Array Slicing                         | `[:, 1:]`, `[0:3]` |
-| Sum Operations                        | `np.sum()`         |
-| Minimum Values                        | `np.min()`         |
-| Maximum Values                        | `np.max()`         |
-| Average Calculation                   | `np.average()`     |
-| Finding Maximum Index                 | `np.argmax()`      |
-| Difference Between Consecutive Values | `np.diff()`        |
-| Cumulative Sum                        | `np.cumsum()`      |
-| Axis Operations                       | `axis=0`, `axis=1` |
-
----
-
-## 📈 Matplotlib Concepts Used
-
-| Concept              | Function Used  |
-| -------------------- | -------------- |
-| Create Figure        | `plt.figure()` |
-| Line Plot            | `plt.plot()`   |
-| Markers              | `marker='o'`   |
-| Custom X-axis Labels | `plt.xticks()` |
-| Graph Title          | `plt.title()`  |
-| X-axis Label         | `plt.xlabel()` |
-| Y-axis Label         | `plt.ylabel()` |
-| Grid                 | `plt.grid()`   |
-| Legend               | `plt.legend()` |
-| Display Plot         | `plt.show()`   |
-
----
-
-## 📊 Visualization Output
-
-The program generates a line chart showing the **sales trend of each restaurant from 2021 to 2024**, helping identify growth patterns and top performers.
-
----
-
-## 🎯 Learning Outcomes
-
-By completing this project, I learned:
-
-* How to manipulate multidimensional arrays using NumPy
-* The importance of `axis=0` (column-wise operations) and `axis=1` (row-wise operations)
-* Techniques for performing business data analysis
-* How to visualize data effectively using Matplotlib
-* Applying Python libraries to real-world scenarios
+**Concepts Used:**
+`NumPy` • `mean()` • `sum()` • `argmax()` • Boolean Indexing • `axis=0` & `axis=1`
 
 ---
 
 ## 🛠️ Technologies Used
 
-* Python 3.x
+* Python 3
 * NumPy
 * Matplotlib
 
----
-
-## ▶️ How to Run
-
-1. Clone the repository:
+## 🚀 Running the Projects
 
 ```bash
 git clone <repository-url>
-```
-
-2. Install dependencies:
-
-```bash
+cd <project-folder>
 pip install numpy matplotlib
-```
-
-3. Run the program:
-
-```bash
 python main.py
 ```
 
+## 🎯 Learning Goals
+
+* Build a strong foundation in NumPy and data manipulation
+* Understand data visualization using Matplotlib
+* Develop practical problem-solving skills for future Machine Learning projects
+
 ---
 
-## 📚 Project Type
-
-Beginner-friendly Data Analysis Project using NumPy and Matplotlib.
+*This repository is part of my journey toward building strong fundamentals in Data Analysis and Machine Learning.*
