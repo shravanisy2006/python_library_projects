@@ -38,6 +38,7 @@ plt.title("Rotated image")
 plt.axis('off')
 
 plt.tight_layout()
+plt.savefig("image_matrix_output.png")
 plt.show()
 
 
