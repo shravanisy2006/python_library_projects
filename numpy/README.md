@@ -36,6 +36,10 @@ Performed restaurant sales analysis and visualized sales trends using NumPy and 
 **Concepts Used:**
 Array Slicing • `sum()` • `mean()` • `max()` • `argmax()` • `diff()` • `cumsum()` • Matplotlib
 
+## Sales Trend
+
+![Sales Trend](Sales_trend.png)
+
 ---
 
 ### 3. 🖼️ Image Represented as Matrix
@@ -52,6 +56,8 @@ Explored how grayscale images are represented as NumPy arrays and applied basic 
 
 **Concepts Used:**
 2D Arrays • Element-wise Operations • Broadcasting • `np.clip()` • Array Slicing • `np.rot90()` • Matplotlib Visualization
+
+![Image Matrix](image_matrix_output.png)
 
 ---
 
