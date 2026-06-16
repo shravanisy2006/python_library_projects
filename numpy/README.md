@@ -55,11 +55,11 @@ Explored how grayscale images are represented as NumPy arrays and applied basic 
 
 ---
 
-### 4. 🧮 Matrix Calculator *(In Progress)*
+### 4. 🧮 Matrix Calculator 
 
 Implement matrix operations using NumPy and explore fundamental linear algebra concepts.
 
-**Planned Features:**
+## Features:
 
 * Matrix addition and subtraction
 * Element-wise multiplication
