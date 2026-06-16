@@ -1,38 +1,76 @@
-# 🐍 Python Libraries Learning Series
+# 🔢 NumPy Projects
 
-A collection of beginner-friendly projects built to strengthen my understanding of **NumPy**, **Matplotlib**, and data analysis concepts through practical applications.
+A collection of projects built while learning **NumPy fundamentals** through practical applications. These projects focus on array operations, data analysis, matrix manipulations, and basic image processing concepts that form the foundation of Data Science and Machine Learning.
 
 ## 📚 Projects
 
-### 1. 🍽️ Zomato Restaurant Sales Analysis
+### 1. 🎓 Student Marks Analyzer
 
-Analyzed restaurant sales data (2021–2024) using NumPy and visualized trends with Matplotlib.
+Analyzed student performance across multiple subjects using NumPy.
 
 **Key Features:**
 
-* Sales analysis by restaurant and year
-* Top-performing restaurant identification
-* Year-over-year growth analysis
-* Sales trend visualization
+* Calculate student-wise average marks
+* Calculate subject-wise average marks
+* Identify the class topper
+* Determine the highest-scoring subject
+* Count students scoring above a performance threshold
 
 **Concepts Used:**
-`NumPy` • Array Slicing • Aggregations (`sum`, `mean`, `max`) • `argmax()` • `diff()` • `cumsum()` • `Matplotlib`
+`mean()` • `sum()` • `argmax()` • Boolean Indexing • `axis=0` & `axis=1`
 
 ---
 
-### 2. 🎓 Student Marks Analyzer
+### 2. 🍽️ Zomato Restaurant Sales Analysis
 
-Developed a NumPy-based analyzer to evaluate student performance across multiple subjects.
+Performed restaurant sales analysis and visualized sales trends using NumPy and Matplotlib.
 
 **Key Features:**
 
-* Student-wise and subject-wise average calculation
-* Topper identification
-* Highest scoring subject analysis
-* Performance filtering based on score thresholds
+* Analyze yearly and restaurant-wise sales
+* Identify top-performing restaurants
+* Calculate yearly sales growth
+* Compute cumulative sales
+* Visualize sales trends
 
 **Concepts Used:**
-`NumPy` • `mean()` • `sum()` • `argmax()` • Boolean Indexing • `axis=0` & `axis=1`
+Array Slicing • `sum()` • `mean()` • `max()` • `argmax()` • `diff()` • `cumsum()` • Matplotlib
+
+---
+
+### 3. 🖼️ Image Represented as Matrix
+
+Explored how grayscale images are represented as NumPy arrays and applied basic image transformations.
+
+**Key Features:**
+
+* Display images from NumPy arrays
+* Invert image colors
+* Adjust image brightness
+* Crop images using array slicing
+* Rotate images and visualize transformations
+
+**Concepts Used:**
+2D Arrays • Element-wise Operations • Broadcasting • `np.clip()` • Array Slicing • `np.rot90()` • Matplotlib Visualization
+
+---
+
+### 4. 🧮 Matrix Calculator *(In Progress)*
+
+Implement matrix operations using NumPy and explore fundamental linear algebra concepts.
+
+**Planned Features:**
+
+* Matrix addition and subtraction
+* Element-wise multiplication
+* Matrix multiplication
+* Matrix transpose
+* Determinant calculation
+* Matrix inverse
+* Eigenvalue computation
+
+**Concepts Covered:**
+Matrix Operations • `numpy.linalg` • Linear Algebra Fundamentals
 
 ---
 
@@ -46,17 +84,18 @@ Developed a NumPy-based analyzer to evaluate student performance across multiple
 
 ```bash
 git clone <repository-url>
-cd <project-folder>
+cd python_library_projects/numpy
 pip install numpy matplotlib
-python main.py
+python <project_file>.py
 ```
 
-## 🎯 Learning Goals
+## 🎯 Learning Outcomes
 
-* Build a strong foundation in NumPy and data manipulation
-* Understand data visualization using Matplotlib
-* Develop practical problem-solving skills for future Machine Learning projects
+* Developed proficiency in NumPy array operations
+* Applied data analysis techniques using Python
+* Understood the role of matrices in image processing and linear algebra
+* Built a strong foundation for future Machine Learning projects
 
 ---
 
-*This repository is part of my journey toward building strong fundamentals in Data Analysis and Machine Learning.*
+*This repository documents my journey of learning Python libraries through hands-on projects and practical problem-solving.*
