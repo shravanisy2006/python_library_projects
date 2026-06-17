@@ -111,9 +111,9 @@ dept_avg.plot(kind='bar')
 
 You can add the generated graph image below after running the project:
 
-```markdown
+
 ![Department Average Marks](avg_marks_analysis.png)
-```
+
 
 ---
 
