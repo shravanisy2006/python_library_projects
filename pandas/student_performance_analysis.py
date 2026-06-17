@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 
 d = {
     "Student_id" : [101 , 102 , 103 , 104 , 105 , 106 , 107 , 108 , 109 , 110],
@@ -55,3 +56,13 @@ print("\n")
 best_dept = dept_avg.idxmax()
 print("=== Best Department ===\n")
 print(best_dept)
+
+print("\n")
+
+dept_avg.plot(kind='bar')
+
+plt.title("Average Marks by department")
+plt.xlabel("Department")
+plt.ylabel("Average Marks")
+plt.savefig("avg_marks_analysis.png")
+plt.show()
