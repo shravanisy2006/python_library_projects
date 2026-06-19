@@ -1,136 +1,96 @@
-# 🎓 Student Performance Analysis using Pandas
+# 🐼 Pandas Projects Collection
 
-A beginner-friendly data analysis project built using **Pandas** and **Matplotlib** to analyze student academic performance and attendance records.
+A collection of beginner-friendly and real-world data analysis projects built using **Pandas**, **NumPy**, and **Matplotlib** as part of my AI/ML learning journey.
 
-## 📌 Project Overview
-
-This project demonstrates how Pandas can be used to organize, filter, analyze, and visualize tabular data.
-
-Using a dataset of students from different departments, the program performs performance analysis, identifies top performers, evaluates attendance records, and generates meaningful insights through data visualization.
+These projects focus on data cleaning, data analysis, visualization, and extracting meaningful insights from structured datasets.
 
 ---
 
-## 📊 Dataset Structure
+# 📚 Projects
 
-The dataset contains the following information:
+## 1. 🎓 Student Performance Analysis
 
-* Student ID
-* Name
-* Department
-* Marks
-* Attendance
+A beginner-friendly project that analyzes student academic performance and attendance records.
 
-Example:
+### Features
 
-| Student ID | Name   | Department | Marks | Attendance |
-| ---------- | ------ | ---------- | ----- | ---------- |
-| 101        | Shreya | CSE        | 83    | 53.9       |
-| 102        | Rahil  | Mech       | 79    | 78         |
-| 103        | Sparsh | CSE        | 86    | 97         |
+* Top 3 students analysis
+* Bottom 3 students analysis
+* Above-average performers
+* Department-wise average marks
+* Attendance analysis
+* Department toppers
+* Best performing department
+* Bar chart visualization
 
----
-
-## 🚀 Features Implemented
-
-### 1. Top Performing Students
-
-Identifies the top 3 students based on marks using:
-
-```python
-df.nlargest()
-```
-
-### 2. Bottom Performing Students
-
-Identifies the bottom 3 students based on marks using:
-
-```python
-df.nsmallest()
-```
-
-### 3. Above Average Students
-
-Calculates the average marks and filters students scoring above the average.
-
-### 4. Department-wise Performance Analysis
-
-Calculates average marks for each department using:
-
-```python
-groupby()
-```
-
-### 5. Attendance Analysis
-
-Identifies students with attendance greater than 85%.
-
-### 6. Department Toppers
-
-Finds the highest-scoring student from each department using:
-
-```python
-idxmax()
-```
-
-### 7. Best Performing Department
-
-Determines the department with the highest average marks.
-
-### 8. Data Visualization
-
-Generates a bar chart showing average marks scored by each department.
-
----
-
-## 🧠 Pandas Concepts Used
+### Concepts Used
 
 * DataFrame Creation
-* Data Selection
 * Filtering
 * Boolean Indexing
+* GroupBy
 * Aggregation Functions
-* Conditional Selection
-* GroupBy Operations
-* `mean()`
 * `nlargest()`
 * `nsmallest()`
 * `idxmax()`
-* `groupby()`
+* Matplotlib Bar Charts
 
----
-
-## 📈 Visualization Output
-
-The project generates a bar chart displaying the average marks scored by students in each department.
-
-Example:
-
-```python
-dept_avg.plot(kind='bar')
-```
-
-You can add the generated graph image below after running the project:
-
+### Visualization
 
 ![Department Average Marks](avg_marks_analysis.png)
 
+---
+
+## 2. 🎌 Anime Data Analysis
+
+A real-world Exploratory Data Analysis (EDA) project built using a Kaggle Anime Dataset.
+
+### Features
+
+* Dataset exploration
+* Data cleaning
+* Top 10 highest-rated anime
+* Highest-rated TV anime
+* Highest-rated movie anime
+* Most popular anime by members
+* Top genres analysis
+* Genre-wise average score analysis
+* Anime type distribution
+
+### Concepts Used
+
+* Data Cleaning
+* Filtering
+* String Manipulation
+* `groupby()`
+* `value_counts()`
+* `sort_values()`
+* `split()`
+* `explode()`
+* Aggregation
+* Matplotlib Visualizations
+
+### Visualizations
+
+#### Anime Type Distribution
+
+![Anime Type Distribution](anime_type_dist.png)
+
+#### Top Genres
+
+![Top Genres](top_genres.png)
+
+#### Genre Score Distribution
+
+![Genre Score Distribution](genre_score_distribution.png)
+
+#### Top Rated Anime
+
+![Top Rated Anime](top_10_rated.png)
 
 ---
 
-## 🎯 Learning Outcomes
-
-Through this project, I learned:
-
-* How to work with structured datasets using Pandas
-* How to filter and analyze data efficiently
-* How to perform grouping and aggregation operations
-* How to identify trends and top performers in a dataset
-* How to generate meaningful insights from tabular data
-* How to visualize data using Matplotlib
-
----
-
-## 🛠️ Technologies Used
+# 🛠️ Technologies Used
 
 * Python 3
 * Pandas
@@ -139,56 +99,40 @@ Through this project, I learned:
 
 ---
 
-## ▶️ How to Run
+# 🎯 Learning Outcomes
 
-1. Clone the repository:
+Through these projects, I learned:
 
-```bash
-git clone <repository-url>
-```
-
-2. Install required libraries:
-
-```bash
-pip install pandas numpy matplotlib
-```
-
-3. Run the program:
-
-```bash
-python student_performance_analysis.py
-```
+* Data cleaning and preprocessing
+* Exploratory Data Analysis (EDA)
+* Data visualization techniques
+* Grouping and aggregation operations
+* Working with real-world datasets
+* Extracting insights from structured data
+* Preparing datasets for Machine Learning workflows
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```text
-student_performance_analysis/
+pandas/
+│
+├── README.md
 │
 ├── student_performance_analysis.py
 ├── avg_marks_analysis.png
-└── README.md
+│
+├── anime_analysis.py
+├── anime.csv
+├── anime_type_dist.png
+├── top_genres.png
+├── genre_score_distribution.png
+├── top_10_rated.png
 ```
-
----
-
-## 📚 Project Type
-
-Beginner-Friendly Data Analysis Project using Pandas and Matplotlib.
-
----
-
-## 🔮 Future Improvements
-
-* Add department-wise attendance analysis
-* Export results to CSV files
-* Create interactive visualizations
-* Build a dashboard using Streamlit
-* Analyze larger real-world datasets
 
 ---
 
 ### ⭐ Key Takeaway
 
-This project demonstrates how Pandas can be used to clean, analyze, and visualize student performance data, making it a strong foundation for future Machine Learning and Data Analysis projects.
+These projects represent my transition from learning Pandas fundamentals to applying data analysis techniques on real-world datasets. They helped strengthen my understanding of data manipulation, visualization, and exploratory analysis, building a foundation for future Machine Learning projects.
